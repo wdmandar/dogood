@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Do Good</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script type='text/javascript'>
+$(document).ready(function () {
+	$('.mobiemenu').click(function () {
+			$(".nav").toggle("slide");
+		});
+		
+		
+$('.myProfile .showprofile').hide();
+	$('.myProfile .profile').hover(function(){
+		$('.showprofile').toggle("slide")
+	
+	})
+	
+	return false;
+});
+
+$(function(){
+	
+	var menu = $('#menu'),
+		pos = menu.offset();
+		
+		$(window).scroll(function(){
+			if($(this).scrollTop() > pos.top+menu.height() && menu.hasClass('default')){
+				menu.fadeOut('fast', function(){
+					$(this).removeClass('default').addClass('fixed').fadeIn(),10;
+				});
+			} else if($(this).scrollTop() <= pos.top && menu.hasClass('fixed')){
+				menu.fadeOut('fast', function(){
+					$(this).removeClass('fixed').addClass('default').fadeIn(),10;
+				});
+			}
+		});
+
+});
+</script>
+<script type="text/javascript" src="js/nagging-menu.js" charset="utf-8"></script> 
+
+</head>
+
+<body>
+<div class="bgWrapper">
+  <div id="menu" class="headerWrap default">
+    	<div class="header">
+        	<h1 class="fltL"><img src="images/do-good-logo.png" alt="DO GOOD" title="DO GOOD" /></h1>
+            <div class="relianceLogo posAbt"><img src="images/reliance-logo.gif" alt="Reliance Life Insurance" title="Reliance Life Insurance" /></div>
+            
+            <div class="mobiemenu"></div>
+            <ul class="nav fltL">
+                <li class="active dogood"><a href="index.html">Do Good</a></li>
+                <li><a href="share_story.html">Share stories</a></li>
+                <li><a href="social-feed.html">SOCIAL FEED</a></li>
+                <li class="last"><a href="contact-us.html">Contact us</a></li>
+            </ul>
+            <div class="downloadApp posAbt"><a href="#"><img src="images/download-apps.png" width="256" height="41" alt="Download Mobile App" title="Download Mobile App" /></a></div>
+            <div class="myProfile posAbt">
+            	<div class="profile">
+                <img src="images/myaccount.png" alt="My Profile" title="My Profile" onmouseover="this.src='images/myaccount2.jpg'" onmouseout="this.src='images/myaccount.png'" border="0" alt=""/>
+                
+                
+                	<ul class="showprofile">
+                    	<li><a href="my-profile.html">My Profile</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </div>
+          	</div>
+      </div>
+  </div>
+  
+  <div class="container homepage">
+     <div class="socialBtn posAbt">
+        <a href="#"><img src="images/facebook-icon.gif" alt="Facebook" title="Facebook" /></a>
+        <a href="#"><img src="images/twiiter-icon.gif" alt="Twitter" title="Twitter" /></a>
+        <a href="#"><img src="images/mail-icon.gif" alt="mail" title="mail" /></a>
+    </div>
+  
+  	<div class="topPart">
+    	<div class="leftPart fltL">
+        	<div class="contentBlock">
+            	<div class="contentIMG"><img src="images/video-banner.jpg" alt="" /></div>
+                <div class="content">
+                	<h2><a href="innerpage.html">Invisible heroes of everyday: "The Rickshawalla"</a></h2>
+                	<p>As soon as we step out of the house, we look for someone to make our travel easier. In the times of cabs and autos, these unnoticed and ignored   </p>
+                </div>
+                
+                <a class="morebtn" href="innerpage.html">more >></a>
+          </div>          
+      </div>
+        <div class="rightPart fltL">
+        	<div class="contentBlock">
+            	<div class="contentIMG"><img src="images/story-img1.jpg" alt="" /></div>
+                <div class="content">
+                	<p><a href="#">This young team is enabling tourists to turn into, "change ....</a></p>
+                    <p class="moreArrow"><a href="#"><img src="images/more-story.png" width="75" height="72" alt="More" title="more" /></a></p>
+                </div>
+          </div>
+          
+         <div class="contentBlock">
+            	<div class="contentIMG"><img src="images/story-img2.jpg" alt="" /></div>
+                <div class="content">
+                	<p><a href="#">This young team is enabling tourists to turn into, "change makers in.....</a></p>
+                  <p class="moreArrow"><a href="#"><img src="images/more-story.png" width="75" height="72" alt="More" title="more" /></a></p>
+                </div>
+          </div>
+          
+          <div class="contentBlock">
+            	<div class="contentIMG"><img src="images/story-img3.jpg" alt="" /></div>
+                <div class="content">
+                	<p><a href="#">This young team is enabling tourists to turn into, "change ....</a></p>
+                  <p class="moreArrow"><a href="#"><img src="images/more-story.png" width="75" height="72" alt="More" title="more" /></a></p>
+                </div>
+                <p class="playbtn"><img src="images/play-btn.png" width="40" height="40" alt="" /></p>
+          </div>
+          
+        </div>
+    </div>
+    
+    <div class="btmPart clr">
+		<div class="contentBlock">
+            <div class="contentIMG"><img src="images/story-img4.jpg" alt="" /></div>
+            <div class="content">
+            	<h2><a href="#">Armstrong Pame, an IAS officer from Manipur.</a></h2>
+                <p>Armstrong Pame, an IAS officer from Manipur, built a 100 km long road in his State without government support.</p>
+            </div>
+            <a class="morebtn" href="innerpage.html">more >></a>
+            <p class="playbtn"><img src="images/play-btn.png" width="40" height="40" alt="" /></p>
+      </div>
+      
+      <div class="contentBlock">
+            <div class="contentIMG"><img src="images/story-img4.jpg" alt="" /></div>
+            <div class="content">
+            	<h2><a href="#">Armstrong Pame, an IAS officer from Manipur.</a></h2>
+                <p>Armstrong Pame, an IAS officer from Manipur, built a 100 km long road in his State without government support.</p>
+            </div>
+            <a class="morebtn" href="innerpage.html">more >></a>
+      </div>
+      
+      <div class="contentBlock">
+            <div class="contentIMG"><img src="images/story-img4.jpg" alt="" /></div>
+            <div class="content">
+            	<h2><a href="#">Armstrong Pame, an IAS officer from Manipur.</a></h2>
+                <p>Armstrong Pame, an IAS officer from Manipur, built a 100 km long road in his State without government support.</p>
+            </div>
+            <a class="morebtn" href="innerpage.html">more >></a>
+      </div>
+      
+      <div class="contentBlock">
+            <div class="contentIMG"><img src="images/story-img4.jpg" alt="" /></div>
+            <div class="content">
+            	<h2><a href="#">Armstrong Pame, an IAS officer from Manipur.</a></h2>
+                <p>Armstrong Pame, an IAS officer from Manipur, built a 100 km long road in his State without government support.</p>
+            </div>
+            <a class="morebtn" href="innerpage.html">more >></a>
+      </div>
+      <div class="contentBlock">
+            <div class="contentIMG"><img src="images/story-img4.jpg" alt="" /></div>
+            <div class="content">
+            	<h2><a href="#">Armstrong Pame, an IAS officer from Manipur.</a></h2>
+                <p>Armstrong Pame, an IAS officer from Manipur, built a 100 km long road in his State without government support.</p>
+            </div>
+            <a class="morebtn" href="innerpage.html">more >></a>
+      </div>
+      <div class="contentBlock">
+            <div class="contentIMG"><img src="images/story-img4.jpg" alt="" /></div>
+            <div class="content">
+            	<h2><a href="#">Armstrong Pame, an IAS officer from Manipur.</a></h2>
+                <p>Armstrong Pame, an IAS officer from Manipur, built a 100 km long road in his State without government support.</p>
+            </div>
+            <a class="morebtn" href="innerpage.html">more >></a>
+      </div>
+      
+    </div>
+  </div>
+   <div class="push"></div>
+</div>
+<div class="footer clr">
+	<div class="disclaimer">Reliance Life Insurance Company Limited, Regd Office: H Block, 1st Floor, Dhirubhai Ambani Knowledge City, Navi Mumbai, Maharashtra - 400710, India. Insurance is the subject matter of the solicitation. Reliance Life Insurance Company Limited is licensed life insurance company registered with the Insurance Regulatory and Development Authority (Registration No: 121) in accordance with the provisions of the Insurance Act 1938.</div>
+	<div class="footercontent">Copyright ©2014, All Rights Reserved </div>
+</div>
+</body>
+</html>
